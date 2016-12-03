@@ -12,9 +12,16 @@
   </head>
 
   <body>
+
+    <div class="page-header">
+      <h1 id="header">Phaser Testing Suite</h1>
+    </div>
+
+    <div id="game-area"></div>
+
     <script type="text/javascript">
           window.onload = function() {
-          var game = new Phaser.Game(700, 500, Phaser.AUTO, '');
+          var game = new Phaser.Game(700, 500, Phaser.AUTO, 'game-area');
           game.state.add('Boot', Game.Boot);
           game.state.add('Preloader', Game.Preloader);
           game.state.add('Test Level', Game.Level);
@@ -28,4 +35,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   </body>
+
 </html>
